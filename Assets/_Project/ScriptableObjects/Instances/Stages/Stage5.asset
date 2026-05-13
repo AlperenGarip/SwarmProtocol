@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 848c7bf68bfa1400584db783403fb636, type: 3}
+  m_Name: Stage5
+  m_EditorClassIdentifier: Assembly-CSharp::SwarmProtocol.ScriptableObjects.StageDataSO
+  stageName: Stage 5
+  stageNumber: 5
+  stageDuration: 300
+  difficultyMultiplier: 2.5
+  spawnBrackets:
+  - fromTime: 0
+    enemyData: {fileID: 11400000, guid: dbb1744f762c340638614487922780f8, type: 2}
+    spawnInterval: 1
+    spawnCount: 4
+  - fromTime: 30
+    enemyData: {fileID: 11400000, guid: 33c02b5dd384c43cda110e9d662198d0, type: 2}
+    spawnInterval: 2.5
+    spawnCount: 2
+  - fromTime: 60
+    enemyData: {fileID: 11400000, guid: a85d55ba214bb4eb99debe0efe345601, type: 2}
+    spawnInterval: 3
+    spawnCount: 2
+  - fromTime: 120
+    enemyData: {fileID: 11400000, guid: 9f8d88781cd5e480cb15df2fb3ba9a42, type: 2}
+    spawnInterval: 8
+    spawnCount: 1
+  bossSpawns:
+  - atTime: 90
+    bossEnemy: {fileID: 11400000, guid: a85d55ba214bb4eb99debe0efe345601, type: 2}
+  - atTime: 210
+    bossEnemy: {fileID: 11400000, guid: 9f8d88781cd5e480cb15df2fb3ba9a42, type: 2}
+  overrideEliteBurstTime: 0
+  eliteBurstTimeBeforeEnd: 30
+  eliteBurstCount: 8
+  eliteEnemyData: {fileID: 11400000, guid: 9f8d88781cd5e480cb15df2fb3ba9a42, type: 2}
+  evolutionAllowedAfterTime: 45

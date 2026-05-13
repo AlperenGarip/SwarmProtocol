@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0643c114efa241cb9c2d77efe4e6ea5, type: 3}
+  m_Name: Passive_Attracter
+  m_EditorClassIdentifier: Assembly-CSharp::SwarmProtocol.ScriptableObjects.PassiveItemSO
+  passiveName: Attracter
+  description: Pulls XP and gold pickups from a wider radius.
+  icon: {fileID: 21300000, guid: aede19d10144142049dad5bc592dc72b, type: 3}
+  rarity: 0
+  statType: 6
+  value: 2
+  isPercentage: 0

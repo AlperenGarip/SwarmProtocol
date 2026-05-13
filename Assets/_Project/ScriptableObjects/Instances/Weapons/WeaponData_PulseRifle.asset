@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa2cbbc7f2a4e40bfb33f0e54b86fa00, type: 3}
+  m_Name: WeaponData_PulseRifle
+  m_EditorClassIdentifier: Assembly-CSharp::SwarmProtocol.ScriptableObjects.WeaponDataSO
+  weaponName: Pulse Rifle
+  description: Steady auto-fire rifle. Dependable damage at any range.
+  icon: {fileID: 21300000, guid: 6f18437ae38cb44beac5284a15cd7a65, type: 3}
+  weaponType: 0
+  weaponPrefab: {fileID: 2073602836316166126, guid: ccedd6e03e9a146f69a80b0e4a238059, type: 3}
+  projectilePrefab: {fileID: 1488998312138739984, guid: 1e27be13d4f5840a1912927b9eb472ac, type: 3}
+  fireStrategy: {fileID: 11400000, guid: 58f30c4bc8e22440eb26ad85b6160ef4, type: 2}
+  baseDamage: 12
+  knockbackForce: 3
+  knockbackDuration: 0.2
+  fireRate: 3
+  projectileSpeed: 25
+  range: 20
+  projectilesPerShot: 1
+  spreadAngle: 0
+  piercing: 0
+  maxLevel: 8
+  damagePerLevel: 5
+  fireRatePerLevel: 0
+  evolutionTarget: {fileID: 11400000, guid: dfa00b8ea36ef4d999e03c2f5fc16a14, type: 2}
+  fireSound: {fileID: 0}

@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 848c7bf68bfa1400584db783403fb636, type: 3}
+  m_Name: Stage3
+  m_EditorClassIdentifier: Assembly-CSharp::SwarmProtocol.ScriptableObjects.StageDataSO
+  stageName: Stage 3
+  stageNumber: 3
+  stageDuration: 240
+  difficultyMultiplier: 1.7
+  spawnBrackets:
+  - fromTime: 0
+    enemyData: {fileID: 11400000, guid: dbb1744f762c340638614487922780f8, type: 2}
+    spawnInterval: 1.5
+    spawnCount: 3
+  - fromTime: 30
+    enemyData: {fileID: 11400000, guid: 33c02b5dd384c43cda110e9d662198d0, type: 2}
+    spawnInterval: 3
+    spawnCount: 1
+  - fromTime: 90
+    enemyData: {fileID: 11400000, guid: a85d55ba214bb4eb99debe0efe345601, type: 2}
+    spawnInterval: 5
+    spawnCount: 1
+  bossSpawns:
+  - atTime: 150
+    bossEnemy: {fileID: 11400000, guid: 9f8d88781cd5e480cb15df2fb3ba9a42, type: 2}
+  overrideEliteBurstTime: 0
+  eliteBurstTimeBeforeEnd: 20
+  eliteBurstCount: 4
+  eliteEnemyData: {fileID: 11400000, guid: 9f8d88781cd5e480cb15df2fb3ba9a42, type: 2}
+  evolutionAllowedAfterTime: 60

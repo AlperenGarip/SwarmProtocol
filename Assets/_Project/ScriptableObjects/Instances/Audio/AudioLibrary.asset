@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59ac199e7a5684314b680358e13c3684, type: 3}
+  m_Name: AudioLibrary
+  m_EditorClassIdentifier: Assembly-CSharp::SwarmProtocol.Audio.AudioLibrarySO
+  weaponFire: {fileID: 8300000, guid: 274f1175842a34a04a11f4c3e3bdd6cf, type: 3}
+  enemyHit: {fileID: 8300000, guid: 9d8744b85088143dfb705e4a750ad291, type: 3}
+  enemyDeath: {fileID: 8300000, guid: 7c3255b37109b412780a48f67cd5b20f, type: 3}
+  xpCollect: {fileID: 8300000, guid: 10b62e3a047fc49359fdf39f811d0e2d, type: 3}
+  goldCollect: {fileID: 8300000, guid: 176a9be79639d4fdb81e31953b260a1e, type: 3}
+  levelUp: {fileID: 8300000, guid: 693dccf12f8e3432ea130b6b15282cdc, type: 3}
+  playerDamage: {fileID: 8300000, guid: 4248cc939d68f473aab9271d48e7ca5b, type: 3}
+  playerDeath: {fileID: 8300000, guid: 5ca6e74822cc74de5a4ab4f87b1f2a3c, type: 3}
+  chestOpen: {fileID: 8300000, guid: b252c694cd5ca4ee3bd58833ff46dd7d, type: 3}
+  uiClick: {fileID: 8300000, guid: 9ef2cc4807c7b46448832b935145b2a6, type: 3}
+  musicMenu: {fileID: 8300000, guid: a8e82530954dd48fcad5651910ad2fd9, type: 3}
+  musicGameplay: {fileID: 8300000, guid: af982316ef41a4f51a38a100577c05e3, type: 3}
+  sfxVolume: 0.5
+  musicVolume: 0.4
