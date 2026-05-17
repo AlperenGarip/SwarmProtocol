@@ -172,6 +172,15 @@ Assets/_Project/
 
 ---
 
+## Documentation
+
+- **[REPORT.md](REPORT.md)** — full CMPE 485 project report (architecture, implementation details, benchmark methodology, results, references)
+- **[REPORT.pdf](REPORT.pdf)** — same content as a single-file PDF for submission
+- **[benchmark.md](benchmark.md)** — runtime benchmark protocol and Profiler instructions
+- **[SwarmProtocol_Presentation.pdf](SwarmProtocol_Presentation.pdf)** — six-minute presentation deck
+
+---
+
 ## Credits
 
 - **Author:** Alperen Garip
