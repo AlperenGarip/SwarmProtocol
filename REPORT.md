@@ -39,19 +39,13 @@ The project is submitted under CMPE 485 Term Project, Option B (a simple game wi
 
 ### 2.1 Core Loop and Win/Lose Conditions
 
-The high-level loop is:
+A run proceeds along a fixed linear spine, with three modal screens that can interrupt any stage and one terminal failure path:
 
-```
-Main Menu  -->  Stage 1 ... Stage 5  -->  Victory
-   ^                |                       (or)
-   |                +--->  Level-Up screen (timeScale=0, pick 1 of 3)
-   |                |
-   |                +--->  Chest Open (timeScale=0, slot machine)
-   |                |
-   |                +--->  Pause Menu (timeScale=0)
-   |                |
-   +-----------  Game Over  <---  player HP reaches 0
-```
+| Phase | Flow | Notes |
+|---|---|---|
+| Linear progression | Main Menu → Stage 1 → ... → Stage 5 → Victory | Each stage is a timed wave |
+| Modal interruptions | Level-Up, Chest Open, Pause Menu | All freeze gameplay (`Time.timeScale = 0`) and return to the active stage on resume |
+| Failure | Active stage → Game Over → Main Menu | Triggered when player HP reaches 0 |
 
 The two terminal conditions are explicit and unambiguous: **win** = the Stage 5 countdown reaches zero; **lose** = the player's HP reaches zero. There are no escape options mid-run other than quitting through the pause menu, which returns to the main menu without saving progress.
 
