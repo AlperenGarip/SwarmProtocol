@@ -126,6 +126,10 @@ A handful of architectural decisions shaped the code, each with a defended trade
 
 Systems communicate by raising events on `EventBus`; only `GameManager` and `ObjectPoolManager` are touched directly (as singletons).
 
+```{=html}
+<div style="page-break-before: always;"></div>
+```
+
 ### 3.2 Design Patterns Used
 
 | Pattern | Location | Role |
@@ -141,27 +145,20 @@ Systems communicate by raising events on `EventBus`; only `GameManager` and `Obj
 
 ### 3.3 Namespace Organization
 
-```
-SwarmProtocol.Core              GameManager, GameState, EventBus, ObjectPoolManager,
-                                ActiveEnemyRegistry, ServiceLocator
-SwarmProtocol.Events            Event<T> + event structs (PassiveAppliedEvent,
-                                StatsChangedEvent, OverchargeTriggeredEvent, ...)
-SwarmProtocol.Player            PlayerController, PlayerHealth, PlayerStats, PlayerXP
-SwarmProtocol.Combat            WeaponManager, WeaponBase, ProjectileBase, DamageSystem
-SwarmProtocol.Combat.Strategies FireStrategySO + Aura/Orbital/RapidFire/Shotgun/
-                                Melee/Nduja subclasses
-SwarmProtocol.Enemies           EnemyBase, BehaviorDrivenEnemy, EnemyNavigation,
-                                EnemyBehaviorSO + per-type subclasses
-SwarmProtocol.Stats             IStatProvider, BaseStatProvider, PassiveDecorator,
-                                StatType
-SwarmProtocol.Progression       StageManager, UpgradeManager, GoldManager,
-                                WeaponEvolutionSystem
-SwarmProtocol.Chest             ChestRewardResolver, JackpotProcessor, OverchargeManager
-SwarmProtocol.UI                HUDController, LevelUpUI, ChestOpenUI,
-                                SlotMachineColumn, VictoryUI, GameOverUI, ...
-SwarmProtocol.Audio             AudioService, AudioLibrarySO, SfxId
-SwarmProtocol.Tools             BenchmarkRunner
-```
+| Namespace | Contents |
+|---|---|
+| `SwarmProtocol.Core` | `GameManager`, `GameState`, `EventBus`, `ObjectPoolManager`, `ActiveEnemyRegistry` |
+| `SwarmProtocol.Events` | `Event<T>` plus per-event structs (`PassiveAppliedEvent`, `StatsChangedEvent`, `OverchargeTriggeredEvent`, ...) |
+| `SwarmProtocol.Player` | `PlayerController`, `PlayerHealth`, `PlayerStats`, `PlayerXP` |
+| `SwarmProtocol.Combat` | `WeaponManager`, `WeaponBase`, `ProjectileBase`, `DamageSystem` |
+| `SwarmProtocol.Combat.Strategies` | `FireStrategySO` and its subclasses (Aura, Orbital, RapidFire, Shotgun, Melee, Nduja) |
+| `SwarmProtocol.Enemies` | `EnemyBase`, `BehaviorDrivenEnemy`, `EnemyNavigation`, `EnemyBehaviorSO` and per-type subclasses |
+| `SwarmProtocol.Stats` | `IStatProvider`, `BaseStatProvider`, `PassiveDecorator`, `StatType` |
+| `SwarmProtocol.Progression` | `StageManager`, `UpgradeManager`, `GoldManager`, `WeaponEvolutionSystem` |
+| `SwarmProtocol.Chest` | `ChestRewardResolver`, `JackpotProcessor`, `OverchargeManager` |
+| `SwarmProtocol.UI` | `HUDController`, `LevelUpUI`, `ChestOpenUI`, `SlotMachineColumn`, `VictoryUI`, `GameOverUI`, ... |
+| `SwarmProtocol.Audio` | `AudioService`, `AudioLibrarySO`, `SfxId` |
+| `SwarmProtocol.Tools` | `BenchmarkRunner` |
 
 The boundaries are intentionally coarse so that the unit of orthogonality (a weapon, an enemy, a passive, a UI panel) lives entirely inside one namespace.
 
